@@ -1,0 +1,20 @@
+<h1>  This site is super unsecure, for proof of concept only</h1>
+<br  />
+<h1>  TraceRoute Tshoot, put in a tracert or list of IPs and it will look at all the interfaces</h1>
+
+
+     <form action = "{%url 'tracert_tshoot' %}" method = 'post'> {% csrf_token %}
+     
+     	<b>Username: </b>
+     	<input type = "text" name = "username" />
+     	<br  />
+     	<b>Password:    </b>
+     	<input type = "password" name = "password" />
+     	<br  />
+     	<b>The tracert:</b>
+     	<br  />
+     	<textarea rows="4" cols="50" name="trace_route" >Enter tracert here...</textarea>
+     	<br  />
+     	<input type = "submit" value = "Tshoot" />
+     	
+     </form>
