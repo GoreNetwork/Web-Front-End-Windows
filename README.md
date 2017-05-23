@@ -20,6 +20,6 @@ def home(request):
   
 This tells it to go to the /templates/tracert.html page
 
-This form has the action <form action = "{%url 'tracert_tshoot' %}" method = 'post'> {% csrf_token %} so it knows once someone hits the Tshoot buttion it will go to the URL tracert_tshoot, which hits "url(r'^tracert_tshoot/', views.tracert_tshoot, name = "tracert_tshoot"),"
+This form has the action "form action = "{%url 'tracert_tshoot' %}" method = 'post' {% csrf_token %}" so it knows once someone hits the Tshoot buttion it will go to the URL tracert_tshoot, which hits "url(r'^tracert_tshoot/', views.tracert_tshoot, name = "tracert_tshoot"),"
 
 So views.py the tracert_tshoot function.  This pulls the username, password, tracert commands, puts them in a list of arguments, and calls the open function telling open to call the "Tracert V2.py" function with those arguments.  It then returns the results.
