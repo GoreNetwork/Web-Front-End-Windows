@@ -4,7 +4,9 @@ All my work is done in python 3
 The main files that matter here are 
 
 /home_page/home_page/urls.py
+
 /home_page/home_page/views.py
+
 /home_page/templates/tracert.html
 
 and I had to add 
